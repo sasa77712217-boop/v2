@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Ventas y Atención al Cliente</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>💼 Ventas & Atención al Cliente</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="tecnicas-venta.html" class="nav-link">Técnicas de Venta</a></li>
+                <li><a href="atencion-cliente.html" class="nav-link">Atención al Cliente</a></li>
+                <li><a href="recursos.html" class="nav-link">Recursos</a></li>
+                <li><a href="quiz.html" class="nav-link active">Quiz</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Quiz de Autoevaluación</h2>
+            <p>Prueba tus conocimientos sobre ventas y atención al cliente</p>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="section">
+        <div class="container">
+            <div class="quiz-intro">
+                <p>Responde todas las preguntas para obtener tu calificación. Cada pregunta tiene una respuesta correcta.</p>
+                <p style="margin-top: 1rem; color: #e74c3c; font-weight: bold;">⏱️ Tiempo estimado: 5-10 minutos</p>
+            </div>
+
+            <div id="quizContainer" class="quiz-container">
+                <!-- Las preguntas se cargarán con JavaScript -->
+            </div>
+
+            <div id="quizResults" class="quiz-results" style="display: none;">
+                <h3>🎉 Tu Resultado</h3>
+                <p id="resultScore"></p>
+                <p id="resultMessage"></p>
+                <div style="margin-top: 2rem;">
+                    <button class="cta-button" onclick="resetQuiz()">Intentar de Nuevo</button>
+                    <a href="index.html" class="cta-button" style="margin-left: 1rem; text-decoration: none; display: inline-block;">Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Información -->
+    <section class="section alt-bg">
+        <div class="container">
+            <h2>Sobre Este Quiz</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>📋 Contenido</h4>
+                    <p>El quiz cubre técnicas de venta, atención al cliente y conceptos clave del servicio comercial.</p>
+                </div>
+                <div class="info-card">
+                    <h4>⏰ Duración</h4>
+                    <p>Puedes tomarte el tiempo que necesites. No hay límite de tiempo.</p>
+                </div>
+                <div class="info-card">
+                    <h4>✅ Calificación</h4>
+                    <p>Recibirás una puntuación en porcentaje y retroalimentación personalizada.</p>
+                </div>
+                <div class="info-card">
+                    <h4>🔄 Reintentos</h4>
+                    <p>Puedes intentar el quiz tantas veces como quieras para mejorar tu puntuación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Centro de Aprendizaje - Ventas y Atención al Cliente. Todos los derechos reservados.</p>
+            <p>Desarrollado con ❤️ para tu éxito profesional</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
